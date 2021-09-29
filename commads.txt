@@ -1,3 +1,7 @@
+
+#### reference https://docs.docker.com/language/java/build-images/ ###############
+
+
 ##building an image
 docker build --tag java-docker-exp .
 
@@ -17,4 +21,8 @@ docker build -t java-docker-exp --target test .
 
 ##run tests
 docker run -it --rm --name springboot-test java-docker-exp
+
+
+##docker compose
+ docker-compose -f docker-compose.dev.yml up --build
 
