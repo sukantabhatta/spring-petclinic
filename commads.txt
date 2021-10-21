@@ -26,3 +26,6 @@ docker run -it --rm --name springboot-test java-docker-exp
 ##docker compose
  docker-compose -f docker-compose.dev.yml up --build
 
+##deploy using kubernetes
+kubectl apply -f deploy.yml
+
